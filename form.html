@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about-me.html">Tentang Saya</a>
+        <a href="educations.html">Riwayat Pendidikan</a>
+        <a href="course-schedule.html">Jadwal Kuliah</a>
+        <a href="hobbies.html">Hobi</a>
+        <a href="form.html">Formulir</a>
+        <a href="table1.html">Tabel 1</a>
+        <a href="table2.html">Tabel 2</a>
+        <a href="table3.html">Tabel 3</a>
+    </nav>
+
+    <main class="form-container">
+
+        <header class="form-header">
+            <h1>Formulir Pendaftaran</h1>
+            <p class="form-subtitle">
+                Silakan lengkapi data diri kamu di bawah ini.
+            </p>
+            <div class="form-line"></div>
+        </header>
+
+        <section class="form-card">
+
+            <div class="form-card-header">
+                <div class="form-decoration">♡</div>
+                <h2>Data Diri</h2>
+                <p>Isi formulir dengan informasi yang benar.</p>
+            </div>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan nama"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="nama@email.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Masukkan password"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="umur">Umur:</label>
+                    <input
+                        type="number"
+                        id="umur"
+                        name="umur"
+                        min="1"
+                        max="120"
+                        placeholder="Umur"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="tanggal">Tanggal Lahir:</label>
+                    <input
+                        type="date"
+                        id="tanggal"
+                        name="tanggal"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Kelamin:</label>
+
+                    <div class="form-choice-list">
+                        <label class="choice-item">
+                            <input
+                                type="radio"
+                                name="jenis_kelamin"
+                                value="Laki-laki"
+                                required
+                            >
+                            <span>Laki-laki</span>
+                        </label>
+
+                        <label class="choice-item">
+                            <input
+                                type="radio"
+                                name="jenis_kelamin"
+                                value="Perempuan"
+                            >
+                            <span>Perempuan</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Hobi:</label>
+
+                    <div class="form-choice-list">
+                        <label class="choice-item">
+                            <input
+                                type="checkbox"
+                                name="hobi[]"
+                                value="Mendengarkan Musik"
+                            >
+                            <span>🎧 Mendengarkan Musik</span>
+                        </label>
+
+                        <label class="choice-item">
+                            <input
+                                type="checkbox"
+                                name="hobi[]"
+                                value="Traveling"
+                            >
+                            <span>✈️ Traveling</span>
+                        </label>
+
+                        <label class="choice-item">
+                            <input
+                                type="checkbox"
+                                name="hobi[]"
+                                value="Membaca"
+                            >
+                            <span>📚 Membaca</span>
+                        </label>
+
+                        <label class="choice-item">
+                            <input
+                                type="checkbox"
+                                name="hobi[]"
+                                value="Menonton Film"
+                            >
+                            <span>🎬 Menonton Film</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="jurusan">Jurusan:</label>
+
+                    <select id="jurusan" name="jurusan" required>
+                        <option value="">-- Pilih Jurusan --</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Informatika">Informatika</option>
+                        <option value="Manajemen">Manajemen</option>
+                        <option value="Akuntansi">Akuntansi</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+
+                    <textarea
+                        id="alamat"
+                        name="alamat"
+                        rows="4"
+                        placeholder="Masukkan alamat"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="foto">Foto:</label>
+
+                    <input
+                        type="file"
+                        id="foto"
+                        name="foto"
+                        accept="image/*"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="website">Website:</label>
+
+                    <input
+                        type="url"
+                        id="website"
+                        name="website"
+                        placeholder="https://example.com"
+                    >
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="form-submit">
+                        Kirim ♡
+                    </button>
+
+                    <button type="reset" class="form-reset">
+                        Reset
+                    </button>
+                </div>
+
+            </form>
+
+            <p class="form-note">
+                ♡ Terima kasih telah mengisi formulir ini ♡
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="education-footer">
+        <p>♡ Firly Laras Cendana ♡</p>
+        <p>Universitas Mandiri - 2026</p>
+    </footer>
+
+</body>
+</html>

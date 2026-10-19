@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tentang Saya | Firly Laras Cendana</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Abhaya Libre', serif;
+            font-size: 19px;
+            line-height: 1.8;
+            background: #fff7fa;
+            color: #654654;
+        }
+
+nav {
+    background: #f4dce6;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 2px solid #d9a7bc;
+    box-shadow: 0 3px 12px rgba(166, 83, 118, 0.08);
+    font-family: 'Abhaya Libre', serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #704457;
+    padding: 7px 14px;
+    border: 1px solid #d9a7bc;
+    border-radius: 25px;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #b96b8b;
+    color: white;
+}
+
+        header {
+            text-align: center;
+            padding: 40px 20px 25px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            font-weight: 800;
+            color: #a65376;
+            margin: 0;
+        }
+
+        header p {
+            color: #987080;
+            margin-top: 5px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .garis-judul {
+            width: 100px;
+            height: 3px;
+            background: #d9a7bc;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+
+        main {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto 45px;
+            padding: 30px 35px;
+            background: #ffffff;
+            border: 1px solid #e8bfd0;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(166, 83, 118, 0.09);
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e8bfd0;
+            margin: 25px 0;
+        }
+
+        h2 {
+            color: #a65376;
+            font-size: 29px;
+            font-weight: 800;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            border-left: 4px solid #c47b9a;
+            padding-left: 12px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        ul, ol {
+            padding-left: 35px;
+        }
+
+        li {
+            padding-left: 5px;
+        }
+
+        li::marker {
+            color: #b96b8b;
+        }
+
+        .quotes {
+            text-align: center;
+            font-style: italic;
+            font-size: 24px;
+            color: #a65376;
+            background: #fff0f5;
+            border: 1px solid #e8bfd0;
+            border-radius: 12px;
+            padding: 25px 20px;
+            margin-top: 30px;
+            line-height: 1.8;
+        }
+
+        .quotes p {
+            text-align: center;
+            margin: 0;
+        }
+
+        .quotes span {
+            display: block;
+            font-size: 17px;
+            font-style: normal;
+            margin-top: 12px;
+            color: #987080;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f4dce6;
+            border-top: 2px solid #d9a7bc;
+            color: #704457;
+        }
+
+        footer p {
+            text-align: center;
+            margin: 3px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                gap: 6px;
+            }
+
+            nav a {
+                padding: 6px 10px;
+                font-size: 16px;
+            }
+
+            header h1 {
+                font-size: 35px;
+            }
+
+            main {
+                width: 94%;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 25px;
+            }
+
+            .quotes {
+                font-size: 21px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about-me.html" class="active">Tentang Saya</a>
+        <a href="educations.html">Riwayat Pendidikan</a>
+        <a href="course-schedule.html">Jadwal Kuliah</a>
+        <a href="hobbies.html">Hobi</a>
+        <a href="form.html">Formulir</a>
+        <a href="table1.html">Tabel 1</a>
+        <a href="table2.html">Tabel 2</a>
+        <a href="table3.html">Tabel 3</a>
+    </nav>
+
+    <header>
+        <h1>Tentang Saya</h1>
+
+        <div class="garis-judul"></div>
+    </header>
+
+    <main>
+
+        <hr>
+
+        <h2>Tentang Saya</h2>
+
+        <p>
+            Saya memiliki ketertarikan pada pengembangan aplikasi web.
+            Saat ini saya sedang belajar membuat halaman web menggunakan HTML.
+        </p>
+
+        <hr>
+
+        <h2>Teknologi yang Sedang Saya Pelajari</h2>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+        </ul>
+
+        <hr>
+
+        <h2>Target Belajar</h2>
+
+        <ol>
+            <li>Memahami HTML</li>
+            <li>Memahami CSS</li>
+            <li>Memahami JavaScript</li>
+            <li>Membuat website sederhana</li>
+        </ol>
+
+        <hr>
+
+        <div class="quotes">
+            <p>
+                "Terus belajar, terus bertumbuh, dan jangan pernah
+                berhenti menjadi versi terbaik dari diri sendiri."
+            </p>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>♡ Firly Laras Cendana ♡</p>
+        <p>Universitas Mandiri · 2026</p>
+    </footer>
+
+</body>
+</html>
